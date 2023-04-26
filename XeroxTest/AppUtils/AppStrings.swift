@@ -7,6 +7,11 @@
 
 import Foundation
 struct AppStrings {
+    
+    struct API {
+        static let ipifyUrl = "https://api.ipify.org?format=json"
+        static let ipinfo = "https://ipinfo.io/"
+    }
     struct Storyboard {
         static let login = "Main"
         static let home = "Home"

@@ -15,6 +15,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        
+//        ApiHelper.shared.getIpAddress()
+//        ApiHelper.shared.fetchIpDetails(ip: "103.125.154.134") { response in
+//            print("Response \(response)")
+//        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
