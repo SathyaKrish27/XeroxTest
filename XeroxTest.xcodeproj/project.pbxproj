@@ -22,6 +22,8 @@
 		6E1A1EBE29F971B500E4BEF4 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EBD29F971B500E4BEF4 /* PersistenceService.swift */; };
 		6E1A1EC129F97A1600E4BEF4 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EC029F97A1600E4BEF4 /* AppStrings.swift */; };
 		6E1A1EC429F97D4900E4BEF4 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EC329F97D4900E4BEF4 /* APIHelper.swift */; };
+		6E1A1ED829F9929700E4BEF4 /* IPDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1ED729F9929700E4BEF4 /* IPDetailsModel.swift */; };
+		6E1A1EDB29F9977700E4BEF4 /* LoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EDA29F9977700E4BEF4 /* LoginManager.m */; };
 		6EBB5D0129F92641002A6BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0029F92641002A6BBC /* AppDelegate.swift */; };
 		6EBB5D0529F92641002A6BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0429F92641002A6BBC /* ViewController.swift */; };
 		6EBB5D0829F92641002A6BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0629F92641002A6BBC /* Main.storyboard */; };
@@ -63,6 +65,10 @@
 		6E1A1EBD29F971B500E4BEF4 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		6E1A1EC029F97A1600E4BEF4 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		6E1A1EC329F97D4900E4BEF4 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		6E1A1ED529F98F2D00E4BEF4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		6E1A1ED729F9929700E4BEF4 /* IPDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPDetailsModel.swift; sourceTree = "<group>"; };
+		6E1A1ED929F9977700E4BEF4 /* XeroxTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XeroxTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		6E1A1EDA29F9977700E4BEF4 /* LoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginManager.m; sourceTree = "<group>"; };
 		6EBB5CFD29F92641002A6BBC /* XeroxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XeroxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBB5D0029F92641002A6BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EBB5D0429F92641002A6BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,6 +137,7 @@
 				6E1A1EB529F96FB100E4BEF4 /* IPViewController */,
 				6E1A1EA029F9636300E4BEF4 /* Home */,
 				6E1A1E9A29F92AFE00E4BEF4 /* Login */,
+				6E1A1ED729F9929700E4BEF4 /* IPDetailsModel.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -195,13 +202,24 @@
 			path = API;
 			sourceTree = "<group>";
 		};
+		6E1A1ED429F98F2D00E4BEF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1ED529F98F2D00E4BEF4 /* MediaPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6EBB5CF429F92641002A6BBC = {
 			isa = PBXGroup;
 			children = (
+				6E1A1EDA29F9977700E4BEF4 /* LoginManager.m */,
 				6EBB5CFF29F92641002A6BBC /* XeroxTest */,
 				6EBB5D1929F92642002A6BBC /* XeroxTestTests */,
 				6EBB5D2329F92642002A6BBC /* XeroxTestUITests */,
 				6EBB5CFE29F92641002A6BBC /* Products */,
+				6E1A1ED429F98F2D00E4BEF4 /* Frameworks */,
+				6E1A1ED929F9977700E4BEF4 /* XeroxTest-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -322,6 +340,7 @@
 				TargetAttributes = {
 					6EBB5CFC29F92641002A6BBC = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					6EBB5D1529F92642002A6BBC = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -398,12 +417,14 @@
 				6EBB5D0B29F92641002A6BBC /* XeroxTest.xcdatamodeld in Sources */,
 				6EBB5D0529F92641002A6BBC /* ViewController.swift in Sources */,
 				6E1A1EB729F96FCC00E4BEF4 /* IPViewController.swift in Sources */,
+				6E1A1ED829F9929700E4BEF4 /* IPDetailsModel.swift in Sources */,
 				6E1A1EAB29F966DE00E4BEF4 /* AppNavigation.swift in Sources */,
 				6EBB5D0129F92641002A6BBC /* AppDelegate.swift in Sources */,
 				6E1A1EA829F9654800E4BEF4 /* UIApplication+Extension.swift in Sources */,
 				6E1A1EB329F96A9B00E4BEF4 /* HomeTableViewCell.swift in Sources */,
 				6E1A1EBE29F971B500E4BEF4 /* PersistenceService.swift in Sources */,
 				6E1A1E9929F92AD700E4BEF4 /* SceneDelegate.swift in Sources */,
+				6E1A1EDB29F9977700E4BEF4 /* LoginManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +599,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -595,6 +617,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.xeroxtest.XeroxTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "XeroxTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -605,6 +629,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -622,6 +647,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.xeroxtest.XeroxTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "XeroxTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

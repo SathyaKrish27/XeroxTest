@@ -10,22 +10,16 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var devicesTableview: UITableView!
-    private var arrayOfDevices: [String] = ["Test A", "Test B", "Test C"]
+    private var arrayOfDevices: [IPInfoModel] = [IPInfoModel(ipAddress: "Test Ip 1", deviceName: "iPhone 11", deviceStatus: "Reachable"), IPInfoModel(ipAddress: "Test Ip 2", deviceName: "iPhone 12", deviceStatus: "Reachable"), IPInfoModel(ipAddress: "Test Ip 3", deviceName: "iPhone XR", deviceStatus: "Reachable")]
    
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
-//        ApiHelper.shared.getIpAddress()
-//        ApiHelper.shared.fetchIpDetails(ip: "103.125.154.134") { response in
-//            print("Response \(response)")
-//        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == AppStrings.Segue.goToIpDetails) {
             let controller = AppNavigation.shared.getIpDetailsViewController()
-            
         }
     }
 }
@@ -39,9 +33,9 @@ extension HomeViewController: UITableViewDataSource {
         let reuseId: String = AppStrings.CellReuseId.homeTableViewCell
         tableView.register(UINib(nibName: AppStrings.TableViewCell.homeTableViewCell, bundle: nil), forCellReuseIdentifier: reuseId)
         if let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: reuseId, for: indexPath) as? HomeTableViewCell {
-            cell.deviceNameLabel.text = self.arrayOfDevices[indexPath.row]
-            cell.ipAddressLabel.text = self.arrayOfDevices[indexPath.row]
-            cell.deviceStatusLabel.text = self.arrayOfDevices[indexPath.row]
+            cell.deviceNameLabel.text = self.arrayOfDevices[indexPath.row].deviceName
+            cell.ipAddressLabel.text = self.arrayOfDevices[indexPath.row].ipAddress
+            cell.deviceStatusLabel.text = self.arrayOfDevices[indexPath.row].deviceStatus
             return cell
         }
         return UITableViewCell()

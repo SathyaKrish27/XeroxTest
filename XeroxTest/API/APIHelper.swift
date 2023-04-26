@@ -8,36 +8,27 @@
 import Foundation
 
 
-struct IPDetailsModel: Codable {
-    
-    let ip: String
-    let city: String
-    let region: String
-    let country: String
-    let loc: String
-    let org: String
-    let postal: String
-    let timezone: String
-    let readme: String
-    
-}
+
 
 class ApiHelper {
     static let shared = ApiHelper()
-    func getIpAddress() {
+    func getIpAddress() -> String {
+        var currentIp: String = ""
         guard let url = URL(string: AppStrings.API.ipifyUrl) else{
-            return
+            return ""
         }
 
         let task = URLSession.shared.dataTask(with: url){
             data, response, error in
             if let data = data, let string = String(data: data, encoding: .utf8){
                 print(string)
+                currentIp = string
                 
             }
         }
 
         task.resume()
+        return currentIp
     }
     func fetchIpDetails(ip: String, completionHandler: @escaping (IPDetailsModel) -> Void) {
         let url = URL(string: AppStrings.API.ipinfo + "geo/")!

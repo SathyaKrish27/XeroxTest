@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     @IBAction func oAuthLoginAction(_ sender: Any) {
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { signInResult, error in
             guard error == nil else { return }
+            AppNavigation.shared.navigateToDashboard()
           }
     }
     

@@ -15,10 +15,46 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwG-E5-5fT">
+                                <rect key="frame" x="16" y="402" width="358" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqW-F4-How">
+                                <rect key="frame" x="16" y="440" width="358" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LlX-3t-7Ui">
+                                <rect key="frame" x="16" y="373" width="358" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hwG-E5-5fT" firstAttribute="top" secondItem="LlX-3t-7Ui" secondAttribute="bottom" constant="8" symbolic="YES" id="7QK-DS-QoR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="LlX-3t-7Ui" secondAttribute="trailing" constant="16" id="AEA-y0-JYq"/>
+                            <constraint firstItem="tqW-F4-How" firstAttribute="leading" secondItem="hwG-E5-5fT" secondAttribute="leading" id="Eg6-gC-qFf"/>
+                            <constraint firstItem="tqW-F4-How" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="MAp-9D-QsY"/>
+                            <constraint firstItem="tqW-F4-How" firstAttribute="trailing" secondItem="hwG-E5-5fT" secondAttribute="trailing" id="cA9-Bx-JXe"/>
+                            <constraint firstItem="tqW-F4-How" firstAttribute="top" secondItem="hwG-E5-5fT" secondAttribute="bottom" constant="17" id="f8G-Tg-wKR"/>
+                            <constraint firstItem="LlX-3t-7Ui" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="gOk-se-4t7"/>
+                            <constraint firstItem="hwG-E5-5fT" firstAttribute="leading" secondItem="LlX-3t-7Ui" secondAttribute="leading" id="jkk-OU-N5t"/>
+                            <constraint firstItem="hwG-E5-5fT" firstAttribute="trailing" secondItem="LlX-3t-7Ui" secondAttribute="trailing" id="mqq-2W-n9H"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ZLY-ei-kMm"/>
+                    <connections>
+                        <outlet property="ipCityLabel" destination="hwG-E5-5fT" id="wD5-zZ-Rgn"/>
+                        <outlet property="ipLocLabel" destination="tqW-F4-How" id="TQX-D1-O5d"/>
+                        <outlet property="ipName" destination="LlX-3t-7Ui" id="XYU-gp-5n0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
