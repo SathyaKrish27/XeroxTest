@@ -175,6 +175,14 @@
 			path = PersistenceService;
 			sourceTree = "<group>";
 		};
+		6E1A1EC229F97D1600E4BEF4 /* AppUtils */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EC029F97A1600E4BEF4 /* AppStrings.swift */,
+			);
+			path = AppUtils;
+			sourceTree = "<group>";
+		};
 		6EBB5CF429F92641002A6BBC = {
 			isa = PBXGroup;
 			children = (
@@ -200,7 +208,7 @@
 			children = (
 				6EBB5D0029F92641002A6BBC /* AppDelegate.swift */,
 				6E1A1E9829F92AD700E4BEF4 /* SceneDelegate.swift */,
-				6E1A1EC029F97A1600E4BEF4 /* AppStrings.swift */,
+				6E1A1EC229F97D1600E4BEF4 /* AppUtils */,
 				6E1A1EBF29F975CB00E4BEF4 /* PersistenceService */,
 				6E1A1EA929F966C500E4BEF4 /* Singleton */,
 				6E1A1EA629F9652100E4BEF4 /* Extensions */,
