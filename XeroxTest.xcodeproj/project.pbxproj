@@ -15,6 +15,11 @@
 		6E1A1EA429F963A500E4BEF4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A1EA329F963A500E4BEF4 /* Home.storyboard */; };
 		6E1A1EA829F9654800E4BEF4 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EA729F9654800E4BEF4 /* UIApplication+Extension.swift */; };
 		6E1A1EAB29F966DE00E4BEF4 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EAA29F966DE00E4BEF4 /* AppNavigation.swift */; };
+		6E1A1EB329F96A9B00E4BEF4 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EB129F96A9B00E4BEF4 /* HomeTableViewCell.swift */; };
+		6E1A1EB429F96A9B00E4BEF4 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A1EB229F96A9B00E4BEF4 /* HomeTableViewCell.xib */; };
+		6E1A1EB729F96FCC00E4BEF4 /* IPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EB629F96FCC00E4BEF4 /* IPViewController.swift */; };
+		6E1A1EB929F96FD900E4BEF4 /* IP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A1EB829F96FD900E4BEF4 /* IP.storyboard */; };
+		6E1A1EBE29F971B500E4BEF4 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EBD29F971B500E4BEF4 /* PersistenceService.swift */; };
 		6EBB5D0129F92641002A6BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0029F92641002A6BBC /* AppDelegate.swift */; };
 		6EBB5D0529F92641002A6BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0429F92641002A6BBC /* ViewController.swift */; };
 		6EBB5D0829F92641002A6BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0629F92641002A6BBC /* Main.storyboard */; };
@@ -49,6 +54,11 @@
 		6E1A1EA329F963A500E4BEF4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		6E1A1EA729F9654800E4BEF4 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 		6E1A1EAA29F966DE00E4BEF4 /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
+		6E1A1EB129F96A9B00E4BEF4 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		6E1A1EB229F96A9B00E4BEF4 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
+		6E1A1EB629F96FCC00E4BEF4 /* IPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPViewController.swift; sourceTree = "<group>"; };
+		6E1A1EB829F96FD900E4BEF4 /* IP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IP.storyboard; sourceTree = "<group>"; };
+		6E1A1EBD29F971B500E4BEF4 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
 		6EBB5CFD29F92641002A6BBC /* XeroxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XeroxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBB5D0029F92641002A6BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EBB5D0429F92641002A6BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +114,7 @@
 		6E1A1EA029F9636300E4BEF4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				6E1A1EAE29F96A3B00E4BEF4 /* HomeCell */,
 				6E1A1EA129F9638300E4BEF4 /* HomeviewControllerViewController.swift */,
 				6E1A1EA329F963A500E4BEF4 /* Home.storyboard */,
 			);
@@ -113,6 +124,7 @@
 		6E1A1EA529F9651600E4BEF4 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				6E1A1EB529F96FB100E4BEF4 /* IPViewController */,
 				6E1A1EA029F9636300E4BEF4 /* Home */,
 				6E1A1E9A29F92AFE00E4BEF4 /* Login */,
 			);
@@ -127,12 +139,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		6E1A1EA929F966C500E4BEF4 /* Navigation */ = {
+		6E1A1EA929F966C500E4BEF4 /* Singleton */ = {
 			isa = PBXGroup;
 			children = (
 				6E1A1EAA29F966DE00E4BEF4 /* AppNavigation.swift */,
 			);
-			path = Navigation;
+			path = Singleton;
+			sourceTree = "<group>";
+		};
+		6E1A1EAE29F96A3B00E4BEF4 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EB129F96A9B00E4BEF4 /* HomeTableViewCell.swift */,
+				6E1A1EB229F96A9B00E4BEF4 /* HomeTableViewCell.xib */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
+		6E1A1EB529F96FB100E4BEF4 /* IPViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EB629F96FCC00E4BEF4 /* IPViewController.swift */,
+				6E1A1EB829F96FD900E4BEF4 /* IP.storyboard */,
+			);
+			path = IPViewController;
+			sourceTree = "<group>";
+		};
+		6E1A1EBF29F975CB00E4BEF4 /* PersistenceService */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EBD29F971B500E4BEF4 /* PersistenceService.swift */,
+			);
+			path = PersistenceService;
 			sourceTree = "<group>";
 		};
 		6EBB5CF429F92641002A6BBC = {
@@ -160,7 +198,8 @@
 			children = (
 				6EBB5D0029F92641002A6BBC /* AppDelegate.swift */,
 				6E1A1E9829F92AD700E4BEF4 /* SceneDelegate.swift */,
-				6E1A1EA929F966C500E4BEF4 /* Navigation */,
+				6E1A1EBF29F975CB00E4BEF4 /* PersistenceService */,
+				6E1A1EA929F966C500E4BEF4 /* Singleton */,
 				6E1A1EA629F9652100E4BEF4 /* Extensions */,
 				6E1A1EA529F9651600E4BEF4 /* App */,
 				6EBB5D0C29F92642002A6BBC /* Assets.xcassets */,
@@ -304,6 +343,8 @@
 				6EBB5D1029F92642002A6BBC /* LaunchScreen.storyboard in Resources */,
 				6EBB5D0D29F92642002A6BBC /* Assets.xcassets in Resources */,
 				6EBB5D0829F92641002A6BBC /* Main.storyboard in Resources */,
+				6E1A1EB929F96FD900E4BEF4 /* IP.storyboard in Resources */,
+				6E1A1EB429F96A9B00E4BEF4 /* HomeTableViewCell.xib in Resources */,
 				6E1A1EA429F963A500E4BEF4 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,9 +373,12 @@
 				6E1A1EA229F9638300E4BEF4 /* HomeviewControllerViewController.swift in Sources */,
 				6EBB5D0B29F92641002A6BBC /* XeroxTest.xcdatamodeld in Sources */,
 				6EBB5D0529F92641002A6BBC /* ViewController.swift in Sources */,
+				6E1A1EB729F96FCC00E4BEF4 /* IPViewController.swift in Sources */,
 				6E1A1EAB29F966DE00E4BEF4 /* AppNavigation.swift in Sources */,
 				6EBB5D0129F92641002A6BBC /* AppDelegate.swift in Sources */,
 				6E1A1EA829F9654800E4BEF4 /* UIApplication+Extension.swift in Sources */,
+				6E1A1EB329F96A9B00E4BEF4 /* HomeTableViewCell.swift in Sources */,
+				6E1A1EBE29F971B500E4BEF4 /* PersistenceService.swift in Sources */,
 				6E1A1E9929F92AD700E4BEF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

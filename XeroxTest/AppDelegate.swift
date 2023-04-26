@@ -8,6 +8,7 @@
 import UIKit
 import CoreData
 import GoogleSignIn
+import Reachability
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       _ application: UIApplication,
       didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        
       GIDSignIn.sharedInstance.restorePreviousSignIn { user, error in
         if error == nil || user != nil {
             // Navigate to post login screen

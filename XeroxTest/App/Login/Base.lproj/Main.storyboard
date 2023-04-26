@@ -32,23 +32,10 @@
                             <constraint firstItem="nmo-fk-aSt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fK2-nD-KsQ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <segue destination="jC4-RR-vNp" kind="show" identifier="go_to_dashboard" id="Def-z6-7on"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="22" y="4"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="zyX-a2-ztr">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="HomeViewController" id="jC4-RR-vNp" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="blA-Di-ErZ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="T19-St-zdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="775" y="-61"/>
         </scene>
     </scenes>
     <resources>
