@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1A1E9629F9281200E4BEF4 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 6E1A1E9529F9281200E4BEF4 /* Reachability */; };
+		6E1A1E9929F92AD700E4BEF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1E9829F92AD700E4BEF4 /* SceneDelegate.swift */; };
+		6E1A1E9D29F95D9A00E4BEF4 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 6E1A1E9C29F95D9A00E4BEF4 /* GoogleSignIn */; };
+		6E1A1E9F29F95D9A00E4BEF4 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6E1A1E9E29F95D9A00E4BEF4 /* GoogleSignInSwift */; };
+		6E1A1EA229F9638300E4BEF4 /* HomeviewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EA129F9638300E4BEF4 /* HomeviewControllerViewController.swift */; };
+		6E1A1EA429F963A500E4BEF4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A1EA329F963A500E4BEF4 /* Home.storyboard */; };
+		6E1A1EA829F9654800E4BEF4 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EA729F9654800E4BEF4 /* UIApplication+Extension.swift */; };
+		6E1A1EAB29F966DE00E4BEF4 /* AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EAA29F966DE00E4BEF4 /* AppNavigation.swift */; };
 		6EBB5D0129F92641002A6BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0029F92641002A6BBC /* AppDelegate.swift */; };
-		6EBB5D0329F92641002A6BBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0229F92641002A6BBC /* SceneDelegate.swift */; };
 		6EBB5D0529F92641002A6BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0429F92641002A6BBC /* ViewController.swift */; };
 		6EBB5D0829F92641002A6BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0629F92641002A6BBC /* Main.storyboard */; };
 		6EBB5D0B29F92641002A6BBC /* XeroxTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0929F92641002A6BBC /* XeroxTest.xcdatamodeld */; };
@@ -37,9 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E1A1E9829F92AD700E4BEF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6E1A1EA129F9638300E4BEF4 /* HomeviewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeviewControllerViewController.swift; sourceTree = "<group>"; };
+		6E1A1EA329F963A500E4BEF4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		6E1A1EA729F9654800E4BEF4 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		6E1A1EAA29F966DE00E4BEF4 /* AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
 		6EBB5CFD29F92641002A6BBC /* XeroxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XeroxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBB5D0029F92641002A6BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6EBB5D0229F92641002A6BBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6EBB5D0429F92641002A6BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6EBB5D0729F92641002A6BBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EBB5D0A29F92641002A6BBC /* XeroxTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = XeroxTest.xcdatamodel; sourceTree = "<group>"; };
@@ -58,6 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E1A1E9629F9281200E4BEF4 /* Reachability in Frameworks */,
+				6E1A1E9D29F95D9A00E4BEF4 /* GoogleSignIn in Frameworks */,
+				6E1A1E9F29F95D9A00E4BEF4 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E1A1E9A29F92AFE00E4BEF4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6EBB5D0429F92641002A6BBC /* ViewController.swift */,
+				6EBB5D0629F92641002A6BBC /* Main.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6E1A1EA029F9636300E4BEF4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EA129F9638300E4BEF4 /* HomeviewControllerViewController.swift */,
+				6E1A1EA329F963A500E4BEF4 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		6E1A1EA529F9651600E4BEF4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EA029F9636300E4BEF4 /* Home */,
+				6E1A1E9A29F92AFE00E4BEF4 /* Login */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		6E1A1EA629F9652100E4BEF4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EA729F9654800E4BEF4 /* UIApplication+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6E1A1EA929F966C500E4BEF4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EAA29F966DE00E4BEF4 /* AppNavigation.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 		6EBB5CF429F92641002A6BBC = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +159,10 @@
 			isa = PBXGroup;
 			children = (
 				6EBB5D0029F92641002A6BBC /* AppDelegate.swift */,
-				6EBB5D0229F92641002A6BBC /* SceneDelegate.swift */,
-				6EBB5D0429F92641002A6BBC /* ViewController.swift */,
-				6EBB5D0629F92641002A6BBC /* Main.storyboard */,
+				6E1A1E9829F92AD700E4BEF4 /* SceneDelegate.swift */,
+				6E1A1EA929F966C500E4BEF4 /* Navigation */,
+				6E1A1EA629F9652100E4BEF4 /* Extensions */,
+				6E1A1EA529F9651600E4BEF4 /* App */,
 				6EBB5D0C29F92642002A6BBC /* Assets.xcassets */,
 				6EBB5D0E29F92642002A6BBC /* LaunchScreen.storyboard */,
 				6EBB5D1129F92642002A6BBC /* Info.plist */,
@@ -146,6 +204,11 @@
 			dependencies = (
 			);
 			name = XeroxTest;
+			packageProductDependencies = (
+				6E1A1E9529F9281200E4BEF4 /* Reachability */,
+				6E1A1E9C29F95D9A00E4BEF4 /* GoogleSignIn */,
+				6E1A1E9E29F95D9A00E4BEF4 /* GoogleSignInSwift */,
+			);
 			productName = XeroxTest;
 			productReference = 6EBB5CFD29F92641002A6BBC /* XeroxTest.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +281,10 @@
 				Base,
 			);
 			mainGroup = 6EBB5CF429F92641002A6BBC;
+			packageReferences = (
+				6E1A1E9429F9281200E4BEF4 /* XCRemoteSwiftPackageReference "Reachability" */,
+				6E1A1E9B29F95D9A00E4BEF4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 6EBB5CFE29F92641002A6BBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -237,6 +304,7 @@
 				6EBB5D1029F92642002A6BBC /* LaunchScreen.storyboard in Resources */,
 				6EBB5D0D29F92642002A6BBC /* Assets.xcassets in Resources */,
 				6EBB5D0829F92641002A6BBC /* Main.storyboard in Resources */,
+				6E1A1EA429F963A500E4BEF4 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E1A1EA229F9638300E4BEF4 /* HomeviewControllerViewController.swift in Sources */,
 				6EBB5D0B29F92641002A6BBC /* XeroxTest.xcdatamodeld in Sources */,
 				6EBB5D0529F92641002A6BBC /* ViewController.swift in Sources */,
+				6E1A1EAB29F966DE00E4BEF4 /* AppNavigation.swift in Sources */,
 				6EBB5D0129F92641002A6BBC /* AppDelegate.swift in Sources */,
-				6EBB5D0329F92641002A6BBC /* SceneDelegate.swift in Sources */,
+				6E1A1EA829F9654800E4BEF4 /* UIApplication+Extension.swift in Sources */,
+				6E1A1E9929F92AD700E4BEF4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +671,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E1A1E9429F9281200E4BEF4 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6E1A1E9B29F95D9A00E4BEF4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E1A1E9529F9281200E4BEF4 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E1A1E9429F9281200E4BEF4 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
+		};
+		6E1A1E9C29F95D9A00E4BEF4 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E1A1E9B29F95D9A00E4BEF4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		6E1A1E9E29F95D9A00E4BEF4 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E1A1E9B29F95D9A00E4BEF4 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		6EBB5D0929F92641002A6BBC /* XeroxTest.xcdatamodeld */ = {
