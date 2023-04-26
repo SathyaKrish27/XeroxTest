@@ -143,12 +143,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		6E1A1EA929F966C500E4BEF4 /* Singleton */ = {
+		6E1A1EA929F966C500E4BEF4 /* AppNavigations */ = {
 			isa = PBXGroup;
 			children = (
 				6E1A1EAA29F966DE00E4BEF4 /* AppNavigation.swift */,
 			);
-			path = Singleton;
+			path = AppNavigations;
 			sourceTree = "<group>";
 		};
 		6E1A1EAE29F96A3B00E4BEF4 /* HomeCell */ = {
@@ -180,9 +180,19 @@
 		6E1A1EC229F97D1600E4BEF4 /* AppUtils */ = {
 			isa = PBXGroup;
 			children = (
+				6E1A1EA629F9652100E4BEF4 /* Extensions */,
+				6E1A1EA929F966C500E4BEF4 /* AppNavigations */,
 				6E1A1EC029F97A1600E4BEF4 /* AppStrings.swift */,
 			);
 			path = AppUtils;
+			sourceTree = "<group>";
+		};
+		6E1A1EC529F9829800E4BEF4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6E1A1EC329F97D4900E4BEF4 /* APIHelper.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		6EBB5CF429F92641002A6BBC = {
@@ -210,11 +220,9 @@
 			children = (
 				6EBB5D0029F92641002A6BBC /* AppDelegate.swift */,
 				6E1A1E9829F92AD700E4BEF4 /* SceneDelegate.swift */,
-				6E1A1EC329F97D4900E4BEF4 /* APIHelper.swift */,
 				6E1A1EC229F97D1600E4BEF4 /* AppUtils */,
+				6E1A1EC529F9829800E4BEF4 /* API */,
 				6E1A1EBF29F975CB00E4BEF4 /* PersistenceService */,
-				6E1A1EA929F966C500E4BEF4 /* Singleton */,
-				6E1A1EA629F9652100E4BEF4 /* Extensions */,
 				6E1A1EA529F9651600E4BEF4 /* App */,
 				6EBB5D0C29F92642002A6BBC /* Assets.xcassets */,
 				6EBB5D0E29F92642002A6BBC /* LaunchScreen.storyboard */,
