@@ -18,7 +18,7 @@ class HomeViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "goToIpDetails") {
+        if (segue.identifier == AppStrings.Segue.goToIpDetails) {
             let controller = AppNavigation.shared.getIpDetailsViewController()
             
         }
@@ -31,8 +31,8 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let reuseId: String = "homeTableViewCell"
-        tableView.register(UINib(nibName: "HomeTableViewCell", bundle: nil), forCellReuseIdentifier: reuseId)
+        let reuseId: String = AppStrings.CellReuseId.homeTableViewCell
+        tableView.register(UINib(nibName: AppStrings.TableViewCell.homeTableViewCell, bundle: nil), forCellReuseIdentifier: reuseId)
         if let cell: HomeTableViewCell = tableView.dequeueReusableCell(withIdentifier: reuseId, for: indexPath) as? HomeTableViewCell {
             cell.deviceNameLabel.text = self.arrayOfDevices[indexPath.row]
             cell.ipAddressLabel.text = self.arrayOfDevices[indexPath.row]
@@ -50,7 +50,7 @@ extension HomeViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "goToIpDetails", sender: indexPath)
+        self.performSegue(withIdentifier: AppStrings.Segue.goToIpDetails, sender: indexPath)
        
     }
 }

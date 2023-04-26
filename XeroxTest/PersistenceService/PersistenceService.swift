@@ -14,12 +14,8 @@ class PersistenceService {
     static let context = appDelegate.persistentContainer.viewContext
     
     class func write() {
-        let entity = NSEntityDescription.entity(forEntityName: "AirPlayDevices", in: context)
+        let entity = NSEntityDescription.entity(forEntityName: AppStrings.PersistentService.airPlayDevices, in: context)
         let managedObject = NSManagedObject(entity: entity!, insertInto: context)
-        
-        //                managedObject.setValue("Shashikant", forKey: "username")
-        //                managedObject.setValue("1234", forKey: "password")
-        //                managedObject.setValue("12", forKey: "age")
         
         do {
             try context.save()
@@ -31,7 +27,7 @@ class PersistenceService {
     
     class func read() {
         
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "AirPlayDevices")
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: AppStrings.PersistentService.airPlayDevices)
         request.returnsObjectsAsFaults = false
         
         do {

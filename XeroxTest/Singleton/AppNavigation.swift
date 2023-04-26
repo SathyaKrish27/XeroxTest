@@ -12,8 +12,8 @@ class AppNavigation {
     static let shared = AppNavigation()
     
     func navigateToDashboard() {
-        let home: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
-        if let homeViewController = home.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController {
+        let home: UIStoryboard = UIStoryboard(name: AppStrings.Storyboard.home, bundle: nil)
+        if let homeViewController = home.instantiateViewController(withIdentifier: AppStrings.ViewController.homeViewController) as? HomeViewController {
             DispatchQueue.main.async {
                 UIApplication.shared.keyWindow?.rootViewController = homeViewController
                 UIApplication.shared.keyWindow?.makeKeyAndVisible()
@@ -23,8 +23,8 @@ class AppNavigation {
     
     
     func getIpDetailsViewController() -> UIViewController {
-        let home: UIStoryboard = UIStoryboard(name: "IP", bundle: nil)
-        if let ipViewController = home.instantiateViewController(withIdentifier: "IPViewController") as? IPViewController {
+        let home: UIStoryboard = UIStoryboard(name: AppStrings.Storyboard.ip, bundle: nil)
+        if let ipViewController = home.instantiateViewController(withIdentifier: AppStrings.ViewController.iPViewController) as? IPViewController {
             return ipViewController
         }
         return UIViewController()

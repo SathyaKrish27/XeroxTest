@@ -20,6 +20,7 @@
 		6E1A1EB729F96FCC00E4BEF4 /* IPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EB629F96FCC00E4BEF4 /* IPViewController.swift */; };
 		6E1A1EB929F96FD900E4BEF4 /* IP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E1A1EB829F96FD900E4BEF4 /* IP.storyboard */; };
 		6E1A1EBE29F971B500E4BEF4 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EBD29F971B500E4BEF4 /* PersistenceService.swift */; };
+		6E1A1EC129F97A1600E4BEF4 /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A1EC029F97A1600E4BEF4 /* AppStrings.swift */; };
 		6EBB5D0129F92641002A6BBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0029F92641002A6BBC /* AppDelegate.swift */; };
 		6EBB5D0529F92641002A6BBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0429F92641002A6BBC /* ViewController.swift */; };
 		6EBB5D0829F92641002A6BBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBB5D0629F92641002A6BBC /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		6E1A1EB629F96FCC00E4BEF4 /* IPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPViewController.swift; sourceTree = "<group>"; };
 		6E1A1EB829F96FD900E4BEF4 /* IP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = IP.storyboard; sourceTree = "<group>"; };
 		6E1A1EBD29F971B500E4BEF4 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		6E1A1EC029F97A1600E4BEF4 /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
 		6EBB5CFD29F92641002A6BBC /* XeroxTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XeroxTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBB5D0029F92641002A6BBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EBB5D0429F92641002A6BBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			children = (
 				6EBB5D0029F92641002A6BBC /* AppDelegate.swift */,
 				6E1A1E9829F92AD700E4BEF4 /* SceneDelegate.swift */,
+				6E1A1EC029F97A1600E4BEF4 /* AppStrings.swift */,
 				6E1A1EBF29F975CB00E4BEF4 /* PersistenceService */,
 				6E1A1EA929F966C500E4BEF4 /* Singleton */,
 				6E1A1EA629F9652100E4BEF4 /* Extensions */,
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E1A1EA229F9638300E4BEF4 /* HomeviewControllerViewController.swift in Sources */,
+				6E1A1EC129F97A1600E4BEF4 /* AppStrings.swift in Sources */,
 				6EBB5D0B29F92641002A6BBC /* XeroxTest.xcdatamodeld in Sources */,
 				6EBB5D0529F92641002A6BBC /* ViewController.swift in Sources */,
 				6E1A1EB729F96FCC00E4BEF4 /* IPViewController.swift in Sources */,
